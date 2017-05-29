@@ -1,0 +1,30 @@
+"""
+The functions and classes for finding and interacting 
+with observatory data are located in this file.
+"""
+
+import pandas
+
+class Channel(object):
+    """
+    A channel is designed to hold the data from a single instrument, 
+    stored at a specific data rate. Examples might be the temperature 
+    sensor on the weather station, or the total power output of a radio 
+    telescope.
+    """
+
+    def __init__(self, instrument, sample_rate, directory):
+        """
+        Initialise the channel.
+
+        Parameters
+        ----------
+        instrument : str
+           The instrument which will be queried for data.
+        sample_rate : int
+           The sample rate at which data is stored in this channel.
+        directory : str
+           The directory in which the data is stored.
+        """
+
+        self.instrument = 
