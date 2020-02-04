@@ -48,6 +48,6 @@ class Weather(object):
     
     def get_data(self, start, end):
         data = self._download_files(start, end)
-        
+        data = data.loc[slice(start, end)]
         
         return data
