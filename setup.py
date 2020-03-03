@@ -23,19 +23,19 @@ test_requirements = [
 ]
 
 setup(
-    name='newt',
+    name='acrerd.data',
     description="Access to data at the University of Glasgow Acre Road Observatory.",
     long_description=readme + '\n\n' + history,
     author="Daniel Williams",
     author_email='daniel.williams@glasgow.ac.uk',
     url='https://github.com/acrerd/newt',
     packages=[
-        'newt',
+        'acrerd.data',
     ],
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
     package_dir={
-        'otter': 'otter'
+        'acred.data': 'newt'
     },
     include_package_data=True,
     install_requires=requirements,
@@ -48,11 +48,10 @@ setup(
         'License :: OSI Approved :: ISC License (ISCL)',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     test_suite='tests',
     tests_require=test_requirements
